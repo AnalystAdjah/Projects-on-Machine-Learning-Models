@@ -1,4 +1,4 @@
-# 🛒 Customer Purchase Behavior Segmentation & Recommender System  
+# Customer Purchase Behaviour Segmentation & Recommender System  
 ## 🧠 Unsupervised Machine Learning with Clustering
 
 This project applies unsupervised learning techniques to segment customers based on their purchasing behavior and builds a basic recommender logic around those segments. 
