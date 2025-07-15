@@ -122,6 +122,3 @@ The sentiment analysis models were evaluated on accuracy, precision, recall, F1-
 
 ## ✅ Best Performance: Multinomial Naive Bayes with TF-IDF
 ⚖️ Trade-off: Random Forests had longer training time with similar accuracy.
-
-## 🛡️ License
-This project is licensed under the MIT License.
