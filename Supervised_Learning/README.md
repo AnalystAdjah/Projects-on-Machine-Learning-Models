@@ -26,7 +26,8 @@ It classifies customer reviews as **positive** or **negative**, using vectorized
 
 ## 📌 Introduction
 
-Sentiment analysis is essential for businesses to interpret customer feedback and improve products and services. This project builds a robust classifier that predicts the **sentiment polarity** of movie reviews using machine learning and NLP techniques.
+Sentiment analysis is essential for businesses to interpret customer feedback and improve products and services. 
+This project builds a robust classifier that predicts the **sentiment polarity** of movie reviews using machine learning and NLP techniques.
 
 ---
 
@@ -108,27 +109,19 @@ Used a custom evaluation function to compute:
 All models were evaluated on the same test set.
 
 ---
+## 📊 Results
+The sentiment analysis models were evaluated on accuracy, precision, recall, F1-score, and training time. Below is a comparison of the models:
 
-## 💻 Installation
+| Model                           | Accuracy   | Precision | Recall | F1-Score | Training Time      |
+| ------------------------------- | ---------- | --------- | ------ | -------- | ------------------ |
+| **MultinomialNB + TF-IDF**      | **86.03%** | 86.03%    | 86.03% | 86.03%   | \~8 seconds        |
+| MultinomialNB + CountVectorizer | 85.25%     | 85.29%    | 85.25% | 85.25%   | \~8 seconds        |
+| Random Forest + TF-IDF          | 84.76%     | 84.81%    | 84.76% | 84.75%   | \~5 minutes 23 sec |
+| Random Forest + CountVectorizer | 84.83%     | 84.89%    | 84.83% | 84.83%   | \~6 minutes 5 sec  |
 
-Install the required packages:
 
-```bash
-pip install pandas nltk scikit-learn contractions
-Download necessary NLTK resources:
-import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
-
-📊 Results
-Model	Accuracy	Precision	Recall	F1-Score	Training Time
-MultinomialNB + TF-IDF	86.03%	86.03%	86.03%	86.03%	~8 sec
-MultinomialNB + CountVectorizer	85.25%	85.29%	85.25%	85.25%	~8 sec
-Random Forest + TF-IDF	84.76%	84.81%	84.76%	84.75%	~5 min 23 sec
-Random Forest + CountVectorizer	84.83%	84.89%	84.83%	84.83%	~6 min 5 sec
-
-✅ Best Performance: Multinomial Naive Bayes with TF-IDF
+## ✅ Best Performance: Multinomial Naive Bayes with TF-IDF
 ⚖️ Trade-off: Random Forests had longer training time with similar accuracy.
 
-🛡️ License
+## 🛡️ License
 This project is licensed under the MIT License.
